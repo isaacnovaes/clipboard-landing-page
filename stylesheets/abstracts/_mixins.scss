@@ -1,0 +1,48 @@
+@mixin set-container {
+    width: 90%;
+    max-width: $max-width;
+    margin: 0 auto;
+}
+
+@mixin set-h1 {
+    font-family: $font;
+    font-weight: 600;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: $dark-grey;
+}
+
+@mixin set-p {
+    font-family: $font;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: $light-grey;
+}
+
+@mixin set-button {
+    display: block;
+    text-align: center;
+    width: 60%;
+    max-width: 300px;
+    margin: 0 auto;
+    color: white;
+    background-color: $pink;
+    border-radius: 20px;
+    margin-top: 50px;
+    padding: 15px 0;
+    font-family: $font-open;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: 0.5s;
+
+    &:hover {
+        border-color: $light-pink;
+        transform: translateY(-3px);
+        box-shadow: 0 5px 5px $grey-shadow;
+        background-color: hsla(322, 100%, 66%, 0.666);
+    }
+}
