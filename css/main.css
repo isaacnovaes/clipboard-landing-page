@@ -98,79 +98,318 @@ button:-moz-focusring,
 header.logo {
   background: url("/images/bg-header-mobile.png");
   background-size: cover;
-  padding: 60px;
+  height: 18rem;
+  position: relative;
 }
 
 header.logo img {
   display: block;
-  margin: 25px auto;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
-header.para h1 {
+header.download h1, section.download h1 {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 600;
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 30px;
+  margin-bottom: 21px;
   color: #4c545d;
 }
 
-header.para p {
+header.download p, section.download p {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 400;
   text-align: center;
   font-size: 1.1rem;
-  line-height: 1.5;
-  margin-bottom: 30px;
+  line-height: 1.2;
+  margin-bottom: 25px;
   color: #9fabb2;
 }
 
-header.para div.links {
+header.download div.links, section.download div.links {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
-header.para div.links a:first-of-type, header.para div.links a:last-of-type {
+header.download div.links a:first-of-type, section.download div.links a:first-of-type, header.download div.links a:last-of-type, section.download div.links a:last-of-type {
   display: block;
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 600;
   text-align: center;
   padding: 15px 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   border-radius: 6rem;
   background-color: #26baa4;
   color: white;
   -webkit-box-shadow: 0 5px 5px rgba(38, 186, 164, 0.5);
           box-shadow: 0 5px 5px rgba(38, 186, 164, 0.5);
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-header.para div.links a:first-of-type:hover, header.para div.links a:hover:last-of-type {
+header.download div.links a:first-of-type:hover, section.download div.links a:first-of-type:hover, header.download div.links a:hover:last-of-type, section.download div.links a:hover:last-of-type {
   background-color: rgba(38, 186, 164, 0.7);
 }
 
-header.para div.links a:last-of-type {
+header.download div.links a:last-of-type, section.download div.links a:last-of-type {
   background-color: #6173ff;
   -webkit-box-shadow: 0 5px 5px rgba(97, 115, 255, 0.5);
           box-shadow: 0 5px 5px rgba(97, 115, 255, 0.5);
 }
 
-header.para div.links a:last-of-type:hover {
+header.download div.links a:last-of-type:hover, section.download div.links a:last-of-type:hover {
   background-color: rgba(97, 115, 255, 0.7);
+}
+
+section.para-center {
+  margin: 180px 0 30px;
+}
+
+section.para-center h1 {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 21px;
+  color: #4c545d;
+}
+
+section.para-center p {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  color: #9fabb2;
+}
+
+.image-para {
+  margin-top: 50px;
+}
+
+.image-para img {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.image-para .para {
+  margin-top: 50px;
+}
+
+.image-para .para .p {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.image-para .para .p h2 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 21px;
+  color: #4c545d;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.image-para .para .p p {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  color: #9fabb2;
+  font-size: 1rem;
+}
+
+figure {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section.details {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+section.details .paragra {
+  margin-bottom: 50px;
+}
+
+section.details .paragra img {
+  display: block;
+  width: 50px;
+  margin: 20px auto;
+}
+
+section.details .paragra h2 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 21px;
+  color: #4c545d;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+section.details .paragra p {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  color: #9fabb2;
+  font-size: 1rem;
+}
+
+section.company-logos {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  margin: 150px auto 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.company-logos img {
+  display: block;
+  margin-bottom: 50px;
+  width: 35%;
+}
+
+section.download {
+  margin: 200px auto;
 }
 
 @media screen and (min-width: 600px) {
   header.logo {
     background-image: url("/images/bg-header-desktop.png");
-    padding: 70px;
+    height: 25rem;
+  }
+  header.download div.links, section.download div.links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    max-width: 900px;
+  }
+  header.download div.links a, section.download div.links a {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    max-width: 300px;
+  }
+  .image-para {
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .image-para img {
+    width: 50%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .image-para .para {
+    width: 45%;
+    margin-top: 0;
+    -ms-flex-item-align: stretch;
+        align-self: stretch;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .image-para .para .p {
+    margin-bottom: 0;
+    max-width: 350px;
+  }
+  .image-para .para .p h2, .image-para .para .p p {
+    text-align: left;
+  }
+  section.details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section.details div.paragra {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+  section.company-logos {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.company-logos img {
+    margin-bottom: 0;
+    width: 16%;
+    max-width: 150px;
   }
 }
 /*# sourceMappingURL=main.css.map */

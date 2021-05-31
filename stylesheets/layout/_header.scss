@@ -1,17 +1,22 @@
-header.logo{
-    background: url("/images/bg-header-mobile.png"); 
+header.logo {
+    background: url("/images/bg-header-mobile.png");
     background-size: cover;
-    padding: 60px; //fix it
+    height: 18rem;
+    position: relative;
 
-    img{
+    img {
         display: block;
-        margin: 25px auto;
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 
-header.para{
+header.download {
     h1 {
-        @include set-container; //change margin bottom for desktop;
+        @include set-container;
         @include set-h1;
     }
     p {
@@ -22,33 +27,32 @@ header.para{
     div.links {
         @include set-container;
 
-        a:first-of-type{
+        a:first-of-type {
             display: block;
             font-family: $font;
             font-weight: 600;
             text-align: center;
             padding: 15px 0;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             border-radius: 6rem;
             background-color: $green;
             color: white;
-            box-shadow: 0 5px 5px rgba($green, $alpha: .5);
-            transition: .5s;
+            box-shadow: 0 5px 5px rgba($green, $alpha: 0.5);
+            transition: 0.5s;
 
             &:hover {
-                background-color:hsla(171, 66%, 44%,.7);
+                background-color: hsla(171, 66%, 44%, 0.7);
             }
         }
 
-        a:last-of-type{
+        a:last-of-type {
             @extend a:first-of-type;
             background-color: $blue;
-            box-shadow: 0 5px 5px rgba($blue, $alpha: .5);
+            box-shadow: 0 5px 5px rgba($blue, $alpha: 0.5);
 
             &:hover {
-                background-color:hsla(233, 100%, 69,.7);
+                background-color: hsla(233, 100%, 69, 0.7);
             }
         }
-
     }
 }

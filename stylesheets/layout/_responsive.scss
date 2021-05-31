@@ -1,10 +1,72 @@
-@media screen and (min-width:600px) {
-
+@media screen and (min-width: 600px) {
     header.logo {
-        background-image: url('/images/bg-header-desktop.png');
-        padding: 70px; //fix it
+        background-image: url("/images/bg-header-desktop.png");
+        height: 25rem;
     }
+    header.download {
+        div.links {
+            display: flex;
+            justify-content: space-around;
+            max-width: 900px;
+
+            a {
+                flex-basis: 40%;
+                max-width: 300px;
+            }
+        }
+    }
+
+    .image-para {
+        @include set-container;
+
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 50%;
+            object-fit: contain;
+        }
+
+        .para {
+            width: 45%;  
+            margin-top: 0;
+            align-self: stretch;    
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            .p {
+                margin-bottom: 0;
+                max-width: 350px;
+
+                h2,p {
+                    text-align: left;
+                }
+            }
+
+        }
+    }
+
+    section.details {
+        display: flex;
+        justify-content: space-between;
+
+        div.paragra {
+            flex-basis: 30%;
+        }
+    }
+
+    section.company-logos {
     
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    
+        img {
+            margin-bottom: 0;
+            width: 16%;
+            max-width: 150px;
+        }
+    
+    }
 }
-
-
