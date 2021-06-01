@@ -1,3 +1,62 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the footer of the site/application.
-// -----------------------------------------------------------------------------
+footer {
+    background-color: hsla(201, 11%, 66%, 0.2);
+
+    div.footer-container {
+        @include set-container;
+        padding: 50px 0 10px;
+
+        div.footer-image {
+            img {
+                display: block;
+                width: 20%;
+                margin: 0 auto 50px;
+                max-width: 80px;
+            }
+        }
+
+        div.footer-links {
+            a {
+                display: block;
+                text-align: center;
+                margin-bottom: 20px;
+                font-family: $font;
+                font-weight: 400;
+                font-size: 1.1rem;
+                line-height: 1.2;
+                color: $dark-grey;
+                transition: 0.4s;
+
+                &:hover {
+                    transform: scale(1.05);
+                    color: $green;
+                }
+            }
+
+            &:last-of-type {
+                width: 40%;
+                max-width: 150px;
+                margin: 20px auto 0;
+                display: flex;
+                justify-content: space-between;
+
+                a {
+                    &:hover {
+                        transform: scale(1);
+                        color: none;
+                    }
+                    svg {
+                        transition: 0.4s;
+
+                        &:hover {
+                            transform: scale(1.2);
+
+                            path {
+                                fill: $green;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,4 +1,4 @@
-section.para-center {
+section.paragraph-center {
     margin: 180px 0 30px;
 
     h1 {
@@ -20,10 +20,10 @@ section.para-center {
         margin: 0 auto;
     }
 
-    .para {
+    .paragraph-block {
         margin-top: 50px;
 
-        .p {
+        .paragraph-container {
             @include set-container;
             margin-bottom: 50px;
 
@@ -55,7 +55,7 @@ figure {
 section.details {
     @include set-container;
 
-    .paragra {
+    div.details-paragraph {
         margin-bottom: 50px;
         
         img {
@@ -77,7 +77,7 @@ section.details {
     }
 }
 
-section.company-logos {
+section.companies-logo {
     @include set-container;
     margin: 150px auto 100px;
     display: flex;
@@ -93,7 +93,7 @@ section.company-logos {
 
 }
 
-section.download {
-    @extend header.download;
+section.download-links {
+    @extend header.download-links;
     margin: 200px auto;
 }

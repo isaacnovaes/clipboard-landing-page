@@ -1,15 +1,19 @@
 @media screen and (min-width: 600px) {
-    header.logo {
+    header.brand-logo {
         background-image: url("/images/bg-header-desktop.png");
         height: 25rem;
     }
-    header.download {
+    header.download-links {
         div.links {
             display: flex;
             justify-content: space-around;
             max-width: 900px;
 
-            a {
+            a:first-of-type {
+                flex-basis: 40%;
+                max-width: 300px;
+            }
+            a:last-of-type {
                 flex-basis: 40%;
                 max-width: 300px;
             }
@@ -27,23 +31,23 @@
             object-fit: contain;
         }
 
-        .para {
-            width: 45%;  
+        .paragraph-block {
+            width: 45%;
             margin-top: 0;
-            align-self: stretch;    
+            align-self: stretch;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
 
-            .p {
+            .paragraph-container {
                 margin-bottom: 0;
                 max-width: 350px;
 
-                h2,p {
+                h2,
+                p {
                     text-align: left;
                 }
             }
-
         }
     }
 
@@ -51,22 +55,55 @@
         display: flex;
         justify-content: space-between;
 
-        div.paragra {
+        div.details-paragraph {
             flex-basis: 30%;
         }
     }
 
-    section.company-logos {
-    
+    section.companies-logo {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-    
+
         img {
             margin-bottom: 0;
             width: 16%;
             max-width: 150px;
         }
-    
+    }
+
+    footer {
+        div.footer-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+
+            div.footer-links {
+                flex-basis: 15%;
+
+                a {
+                    text-align: left;
+                    width: fit-content;
+                }
+
+                &:last-of-type {
+                    margin: 0;
+                    flex-basis: 16%;
+                    a {
+                        height: fit-content;
+                    }
+                }
+
+                &:first-of-type {
+                    flex-basis: 20%;
+                }
+            }
+
+            div.footer-image {
+                img {
+                    width: 50%;
+                }
+            }
+        }
     }
 }
