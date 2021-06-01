@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- [Live Site](https://www.frontendmentor.io/solutions/mobile-first-site-using-html-sass-and-flexbox-KCBcszUIl)
+- [Live Site](https://third-project-clipboard-landing-page.netlify.app/)
 
 ## My process
 
