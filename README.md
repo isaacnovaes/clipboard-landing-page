@@ -12,7 +12,6 @@
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
-    - [What I learned](#what-i-learned)
     - [Continued development](#continued-development)
 
 ## Overview
@@ -26,12 +25,13 @@ Users should be able to:
 
 ### Screenshot
 
-to be added
+[Mobile](./design/Mobile.png)
+
+[Desktop](./design/Desktop.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Live Site](https://www.frontendmentor.io/solutions/mobile-first-site-using-html-sass-and-flexbox-KCBcszUIl)
 
 ## My process
 
@@ -39,36 +39,16 @@ to be added
 
 - Semantic HTML5 markup
 - CSS custom properties
+- SASS
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - Styled Components
 
 
-### What I learned
-
-to be written
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
 
 ### Continued development
 
-to be written
+I have concluded this challenge so much faster than the [first](https://github.com/isaacnovaes/fylo-dark-theme-landing-page) and [second](https://github.com/isaacnovaes/huddle-landing-page-with-curved-sections) challenges that I even got surprised. Over time, I can see that I have solidified the fundamental knowledge of HTML and CSS. In a few weeks, I will get the summer break from my university. It's gonna be for 3 months, so I will use all this time to deeply study the fundamentals of JavaScript. 
 
 
 
