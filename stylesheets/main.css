@@ -1,0 +1,560 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  /* Set core root defaults */
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+img {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button, input, textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+/* Remove all animations, transitions, and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+header.brand-logo {
+  background: url("/images/bg-header-mobile.png");
+  background-size: cover;
+  height: 18rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header.brand-logo img {
+  display: block;
+  margin: 0 auto;
+  -webkit-animation: logo-spinner 1s 0.5s both;
+          animation: logo-spinner 1s 0.5s both;
+}
+
+@-webkit-keyframes logo-spinner {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes logo-spinner {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+header.download-links h1, section.download-links h1 {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 21px;
+  color: #4c545d;
+}
+
+header.download-links p, section.download-links p {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  color: #9fabb2;
+}
+
+header.download-links div.links, section.download-links div.links {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+header.download-links div.links a:first-of-type, section.download-links div.links a:first-of-type, header.download-links div.links a:last-of-type, section.download-links div.links a:last-of-type {
+  display: block;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  padding: 15px 0;
+  margin-bottom: 15px;
+  border-radius: 6rem;
+  background-color: #26baa4;
+  color: white;
+  -webkit-box-shadow: 0 5px 5px rgba(38, 186, 164, 0.5);
+          box-shadow: 0 5px 5px rgba(38, 186, 164, 0.5);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-animation: header-links-slider-left 0.9s 1.1s both;
+          animation: header-links-slider-left 0.9s 1.1s both;
+}
+
+header.download-links div.links a:first-of-type:hover, section.download-links div.links a:first-of-type:hover, header.download-links div.links a:hover:last-of-type, section.download-links div.links a:hover:last-of-type {
+  background-color: rgba(38, 186, 164, 0.7);
+}
+
+@-webkit-keyframes header-links-slider-left {
+  from {
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes header-links-slider-left {
+  from {
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+header.download-links div.links a:last-of-type, section.download-links div.links a:last-of-type {
+  background-color: #6173ff;
+  -webkit-box-shadow: 0 5px 5px rgba(97, 115, 255, 0.5);
+          box-shadow: 0 5px 5px rgba(97, 115, 255, 0.5);
+  -webkit-animation: header-links-slider-right 0.9s 1.1s both;
+          animation: header-links-slider-right 0.9s 1.1s both;
+}
+
+header.download-links div.links a:last-of-type:hover, section.download-links div.links a:last-of-type:hover {
+  background-color: rgba(97, 115, 255, 0.7);
+}
+
+@-webkit-keyframes header-links-slider-right {
+  from {
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes header-links-slider-right {
+  from {
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+section.paragraph-center {
+  margin: 180px 0 30px;
+}
+
+section.paragraph-center h1 {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 21px;
+  color: #4c545d;
+}
+
+section.paragraph-center p {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  color: #9fabb2;
+}
+
+.image-para {
+  margin-top: 50px;
+}
+
+.image-para img {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.image-para .paragraph-block {
+  margin-top: 50px;
+}
+
+.image-para .paragraph-block .paragraph-container {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.image-para .paragraph-block .paragraph-container h2 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 21px;
+  color: #4c545d;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.image-para .paragraph-block .paragraph-container p {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  color: #9fabb2;
+  font-size: 1rem;
+}
+
+figure {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section.details {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+section.details div.details-paragraph {
+  margin-bottom: 50px;
+}
+
+section.details div.details-paragraph img {
+  display: block;
+  width: 50px;
+  margin: 20px auto;
+}
+
+section.details div.details-paragraph h2 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 21px;
+  color: #4c545d;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+section.details div.details-paragraph p {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  color: #9fabb2;
+  font-size: 1rem;
+}
+
+section.companies-logo {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  margin: 150px auto 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.companies-logo img {
+  display: block;
+  margin-bottom: 50px;
+  width: 35%;
+}
+
+section.download-links {
+  margin: 200px auto;
+}
+
+footer {
+  background-color: rgba(159, 171, 178, 0.2);
+}
+
+footer div.footer-container {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 50px 0 10px;
+}
+
+footer div.footer-container div.footer-image img {
+  display: block;
+  width: 20%;
+  margin: 0 auto 50px;
+  max-width: 80px;
+}
+
+footer div.footer-container div.footer-links a {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  color: #4c545d;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+footer div.footer-container div.footer-links a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  color: #26baa4;
+}
+
+footer div.footer-container div.footer-links:last-of-type {
+  width: 40%;
+  max-width: 150px;
+  margin: 20px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer div.footer-container div.footer-links:last-of-type a:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  color: none;
+}
+
+footer div.footer-container div.footer-links:last-of-type a svg {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+footer div.footer-container div.footer-links:last-of-type a svg:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+footer div.footer-container div.footer-links:last-of-type a svg:hover path {
+  fill: #26baa4;
+}
+
+@media screen and (min-width: 600px) {
+  header.brand-logo {
+    background-image: url("/images/bg-header-desktop.png");
+    height: 25rem;
+  }
+  header.download-links div.links, section.download-links div.links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    max-width: 900px;
+  }
+  header.download-links div.links a:first-of-type, section.download-links div.links a:first-of-type, header.download-links div.links a:last-of-type, section.download-links div.links a:last-of-type {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    max-width: 300px;
+  }
+  header.download-links div.links a:last-of-type, section.download-links div.links a:last-of-type {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    max-width: 300px;
+  }
+  .image-para {
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .image-para img {
+    width: 50%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .image-para .paragraph-block {
+    width: 45%;
+    margin-top: 0;
+    -ms-flex-item-align: stretch;
+        align-self: stretch;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .image-para .paragraph-block .paragraph-container {
+    margin-bottom: 0;
+    max-width: 350px;
+  }
+  .image-para .paragraph-block .paragraph-container h2,
+  .image-para .paragraph-block .paragraph-container p {
+    text-align: left;
+  }
+  section.details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section.details div.details-paragraph {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+  section.companies-logo {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.companies-logo img {
+    margin-bottom: 0;
+    width: 16%;
+    max-width: 150px;
+  }
+  footer div.footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 20px 0;
+  }
+  footer div.footer-container div.footer-links {
+    -ms-flex-preferred-size: 15%;
+        flex-basis: 15%;
+  }
+  footer div.footer-container div.footer-links a {
+    text-align: left;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  footer div.footer-container div.footer-links:last-of-type {
+    margin: 0;
+    -ms-flex-preferred-size: 16%;
+        flex-basis: 16%;
+  }
+  footer div.footer-container div.footer-links:last-of-type a {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  footer div.footer-container div.footer-links:first-of-type {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+  }
+  footer div.footer-container div.footer-image img {
+    width: 50%;
+  }
+}
